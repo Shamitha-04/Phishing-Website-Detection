@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}" type="text/css">
+    <title>Phishing URL Detector - Result</title>
+</head>
+<body class="background" style="background-image: url('{{ url_for('static', filename='bg.jpg') }}');">
+    <div class="container">
+        <h1 class="heading">Phishing URL Detection Result</h1>
+        <div class="result-box">
+            <p class="label">You entered the URL:</p>
+            <p class="url">{{ url }}</p>
+            <p class="label">Result:</p>
+            <p class="prediction">{{ prediction }}</p>
+        </div>
+        <a href="/" class="back-link">Back to Home</a>
+    </div>
+</body>
+</html>

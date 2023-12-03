@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+    <title>Phishing URL Detector</title>
+</head>
+<body class="background">
+    <div class="container">
+        <h1 class="heading">Phishing URL Detector</h1>
+        <form class="form" method="POST" action="/check">
+            <label for="url" class="label">Enter a URL:</label>
+            <input type="text" id="url" name="url" class="input" required>
+            <button type="submit" class="button">Check</button>
+        </form>
+    </div>
+    <img src="{{ url_for('static', filename='bg.jpg') }}" alt="Background Image" class="bg-image">
+</body>
+</html>

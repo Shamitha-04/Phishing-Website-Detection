@@ -1,0 +1,85 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body.background {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    padding: 20px;
+    border: 2px solid #4CAF50; /* Green border around the container */
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading Styles */
+.heading {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Result Box Styles */
+.result-box {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.label {
+    font-weight: bold;
+    color: #333;
+}
+
+.url {
+    color: #007bff; /* Blue color for URL */
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.prediction {
+    font-weight: bold;
+    color: #4CAF50; /* Green color for prediction */
+    font-size: 24px;
+}
+
+/* Unique Highlighting Effect */
+.result-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #4CAF50, #007bff);
+    opacity: 0.3;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+/* Back Link Styles */
+.back-link {
+    text-decoration: none;
+    color: #4CAF50; /* Green color for link */
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.back-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
